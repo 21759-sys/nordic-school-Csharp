@@ -67,32 +67,40 @@ namespace HelloWorldApp
             int doubleNumber = myNumber * 2;
             Console.WriteLine(doubleNumber);
             //----------------
-            */
-
+            
+                        */
             Console.WriteLine();
             Console.WriteLine();
             Console.Write("Введите число 1: ");
-            string Value_1_from_console = Console.ReadLine();
+            var Value_1_from_console = Console.ReadLine();
             Console.Write("Введите число 2: ");
-            string Value_2_from_console = Console.ReadLine();
+            var Value_2_from_console = Console.ReadLine();
 
-            int value_1 = int.Parse(Value_1_from_console);
-            int value_2 = int.Parse(Value_2_from_console);
+            double value_1 = double.Parse(Value_1_from_console);
+            double value_2 = double.Parse(Value_2_from_console);
 
-            string check_value_1 = Convert.ToString(value_1);
-            string check_value_2 = Convert.ToString(value_2);
 
-            Console.WriteLine(check_value_1, check_value_2);
+            //            int value_1 = int.Parse(Value_1_from_console);
+            //            int value_2 = int.Parse(Value_2_from_console);
+            //            string check_value_1 = Convert.ToString(value_1);
+            //            string check_value_2 = Convert.ToString(value_2);
 
-            int addition = value_1 - value_2;
-            int subtraction = value_1 + value_2;
-            int composition = value_1 * value_2;
+            double addition = value_1 - value_2;
+            double subtraction = value_1 + value_2;
+            double composition = value_1 * value_2;
             double division = value_1 / value_2;
 
             Console.WriteLine($"Сумма: {addition}");
             Console.WriteLine($"Вычетание: {subtraction}");
             Console.WriteLine($"Произведение: {composition}");
             Console.WriteLine($"Деление: {division}");
+
+            /*
+            Console.Write("Введите число 1: ");
+            var Value_1_from_console = Console.ReadLine();
+            double value_1 = double.Parse(Value_1_from_console);
+            Console.WriteLine($"Ебалово: {value_1}");
+            */
 
 
 
